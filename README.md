@@ -20,7 +20,7 @@ Here's a few:
 
 ### Installing SimpleBox
 1. Copy/upload everything within the [`Network`](Network) directly to your free hosting service via FTP (that they provide you with).
-2. You'll have to edit [`p_login.php`](p_login.php).  
+2. You'll have to edit [`p_login.php`](Network/p_login.php).  
     Change `$MyUsername = "admin";` to `$MyUsername = "USERNAME_HERE";`  
     and change `$MyPassword = "0a44573b5612d0f621a6d4ea81453219e23003a7bd3144791bbe82c1028eb701";` to  
     `$MyPassword = "YOUR_SHA256_HASHED_PASSWORD";`  
