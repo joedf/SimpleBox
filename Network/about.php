@@ -59,11 +59,12 @@
 		<!-- END Fixed navbar -->
 
 		<!-- START Main content -->
-		<div class="container theme-showcase" role="main" id="content">
+		<div class="container theme-showcase" role="main" id="content" style="padding-top:0">
 
-			<h1>SimpleBox</h1><br>
-			<img src="src/logo.png"><br><br>
-			<p>By Joe DF, made with laziness...</p>
+			<a href="http://github.com/joedf/SimpleBox" style="color:black;text-decoration:none"><h1>SimpleBox</h1>
+			<img src="src/logo.png"></a><br><br>
+			<p><b>Version:</b> 1.0.0<br><b>Revision:</b> 01:12 2014-07-04</p>
+			<p>By <a href="http://github.com/joedf">Joe DF</a>, made with laziness...</p>
 			<p>Released under the <a href="http://opensource.org/licenses/MIT">MIT License</a></p>
 
 		</div>
