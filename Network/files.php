@@ -68,9 +68,14 @@ exit();
 							unlink($tmp);
 					}
 					
-					foreach (glob("*.*") as $file) {
-						echo '<tr><td><a href="files/'.$file.'" target="_top">'.$file.'</a></td><td>'.date("Y-m-d H:i",filemtime($file)).'</td><td>'.formatSizeUnits(filesize($file)).'</td><td><a href="javascript:confirmDelete(\''.$file.'\')">Delete</a></td></tr>';
-						$i = $i + 1;
+					if ($handle = opendir("./")) {
+						while (false !== ($file = readdir($handle))) {
+							if ($file != "." && $file != "..") {
+								echo '<tr><td><a href="files/'.$file.'" target="_top">'.$file.'</a></td><td>'.date("Y-m-d H:i",filemtime($file)).'</td><td>'.formatSizeUnits(filesize($file)).'</td><td><a href="javascript:confirmDelete(\''.$file.'\')">Delete</a></td></tr>';
+								$i = $i + 1;
+							}
+						}
+						closedir($handle);
 					}
 					if (!$i)
 						echo '<tr><td><a href="#">-</a></td><td>-</td><td>-</td><td>-</td></tr>';
