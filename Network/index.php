@@ -40,6 +40,22 @@
 				$("#file").replaceWith($("#file").clone());
 				$('#file').val('');
 			}
+			
+			function search() {
+				var q = document.getElementById("query").value;
+				if (q.length == 0)
+					return
+				document.getElementById('loader').style.display='block';
+				var filelist = document.getElementById("filelist");
+				filelist.src = "files.php?s=" + q;
+			}
+			
+			function clearsearch() {
+				document.getElementById("query").value = "";
+				document.getElementById('loader').style.display='block';
+				var filelist = document.getElementById("filelist");
+				filelist.src = "files.php";
+			}
 		</script>
 	</head>
 	
@@ -132,6 +148,25 @@
 
 								})();
 							</script>
+						</div>
+					</div>
+				</div>
+				<div> <!--search-->
+					<input type="button" value="Search" onclick="spoiler(this);">
+					<div style="display:none">
+						<h2 style="display:none">Search</h2>
+						<div style="display:inline-block;">
+							<form action="javascript:search()">
+								<div>
+									
+									<div style="display:inline-block;">
+										<input type="text" name="query" id="query" style="display:inline-block;width:300px" placeholder="Search text here...">
+										<input type="button" value="Search" onclick="search()">
+										<input type="button" value="Clear" onclick="clearsearch()">
+									</div>
+									
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>

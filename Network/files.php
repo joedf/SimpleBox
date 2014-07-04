@@ -47,7 +47,13 @@ exit();
 
 	<body>
 		<div style="padding: 0 15px;">
-			<h2>Files</h2>
+		
+			<?php
+				if (isset($_REQUEST['s']))
+					echo '<h2>Files Search</h2><p>Search results for: <i><q>'.$_REQUEST['s'].'</q></i></p>';
+				else
+					echo "<h2>Files</h2>";
+			?>
 
 			<table id="list" class="sortable">
 				<?php
@@ -66,17 +72,36 @@ exit();
 							unlink($tmp);
 					}
 					
-					if ($handle = opendir("./")) {
-						while (false !== ($file = readdir($handle))) {
-							if ($file != "." && $file != "..") {
-								echo '<tr><td><a href="files/'.$file.'" target="_top">'.$file.'</a></td><td>'.date("Y-m-d H:i",filemtime($file)).'</td><td>'.formatSizeUnits(filesize($file)).'</td><td><a href="javascript:confirmDelete(\''.$file.'\')">Delete</a></td></tr>';
-								$i = $i + 1;
+					if (isset($_REQUEST['s'])) { //filename search
+						$queries = explode(" ",$_REQUEST['s']);
+						if ($handle = opendir("./")) {
+							while (false !== ($file = readdir($handle))) {
+								if ($file != "." && $file != "..") {
+									foreach($queries as $tag) {
+										if (stripos($file, trim($tag)) !== false) {
+											echo '<tr><td><a href="files/'.$file.'" target="_top">'.$file.'</a></td><td>'.date("Y-m-d H:i",filemtime($file)).'</td><td>'.formatSizeUnits(filesize($file)).'</td><td><a href="javascript:confirmDelete(\''.$file.'\')">Delete</a></td></tr>';
+											$i = $i + 1;
+										}  
+									}
+								}
 							}
+							closedir($handle);
 						}
-						closedir($handle);
+						if (!$i)
+							echo '<tr><td>No results</td><td>-</td><td>-</td><td>-</td></tr>';
+					} else { //normal listing
+						if ($handle = opendir("./")) {
+							while (false !== ($file = readdir($handle))) {
+								if ($file != "." && $file != "..") {
+									echo '<tr><td><a href="files/'.$file.'" target="_top">'.$file.'</a></td><td>'.date("Y-m-d H:i",filemtime($file)).'</td><td>'.formatSizeUnits(filesize($file)).'</td><td><a href="javascript:confirmDelete(\''.$file.'\')">Delete</a></td></tr>';
+									$i = $i + 1;
+								}
+							}
+							closedir($handle);
+						}
+						if (!$i)
+							echo '<tr><td>-</td><td>-</td><td>-</td><td>-</td></tr>';
 					}
-					if (!$i)
-						echo '<tr><td>-</td><td>-</td><td>-</td><td>-</td></tr>';
 					?>
 				</tbody>
 			</table>
