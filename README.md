@@ -10,6 +10,11 @@ Here's how : a simple equation.
 
 `SimpleBox` **+** `Free "unlimited" Hosting` **=** `a free unlimited "Box" service`
 
+### Live Demo
+Navigate to http://simplebox.tk
+Username: admin
+Password: testtest321
+
 ### Free "unlimited" Hosting services
 Here's a few:
 
