@@ -78,7 +78,7 @@ exit();
 						closedir($handle);
 					}
 					if (!$i)
-						echo '<tr><td><a href="#">-</a></td><td>-</td><td>-</td><td>-</td></tr>';
+						echo '<tr><td>-</td><td>-</td><td>-</td><td>-</td></tr>';
 					?>
 				</tbody>
 			</table>
