@@ -83,7 +83,7 @@ exit();
 								if ($file != "." && $file != "..") {
 									foreach($queries as $tag) {
 										if (stripos($file, trim($tag)) !== false) {
-											echo '<tr><td><a href="files/'.$file.'" target="_top">'.$file.'</a></td><td>'.date("Y-m-d H:i",filemtime($file)).'</td><td>'.formatSizeUnits(filesize($file)).'</td><td><a href="javascript:confirmDelete(\''.$file.'\')">Delete</a></td></tr>';
+											echo '<tr><td><a href="files/'.$file.'" target="_blank">'.$file.'</a></td><td>'.date("Y-m-d H:i",filemtime($file)).'</td><td>'.formatSizeUnits(filesize($file)).'</td><td><a href="javascript:confirmDelete(\''.$file.'\')">Delete</a></td></tr>';
 											$i = $i + 1;
 										}  
 									}
@@ -97,7 +97,7 @@ exit();
 						if ($handle = opendir("./")) {
 							while (false !== ($file = readdir($handle))) {
 								if ($file != "." && $file != "..") {
-									echo '<tr><td><a href="files/'.$file.'" target="_top">'.$file.'</a></td><td>'.date("Y-m-d H:i",filemtime($file)).'</td><td>'.formatSizeUnits(filesize($file)).'</td><td><a href="javascript:confirmDelete(\''.$file.'\')">Delete</a></td></tr>';
+									echo '<tr><td><a href="files/'.$file.'" target="_blank">'.$file.'</a></td><td>'.date("Y-m-d H:i",filemtime($file)).'</td><td>'.formatSizeUnits(filesize($file)).'</td><td><a href="javascript:confirmDelete(\''.$file.'\')">Delete</a></td></tr>';
 									$i = $i + 1;
 								}
 							}
