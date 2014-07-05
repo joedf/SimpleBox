@@ -4,7 +4,7 @@ html, body {
 }
 
 body {	
-	background: url('bg.png') no-repeat center center fixed; 
+	background: url('bg.png') no-repeat center center fixed #1278c8; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
