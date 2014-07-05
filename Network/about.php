@@ -20,10 +20,7 @@
 		<link rel="stylesheet" href="src/bootstrap/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="src/style.css">
 		
-		<script src="src/sorttable.js"></script>
 		<script src="src/jquery.min.js"></script>
-		<script src="src/spoiler.js"></script>
-		<script src="src/jquery.form.js"></script>
 		<script src="src/bootstrap/js/bootstrap.min.js"></script>
 		
 		<script language="javascript" type="text/javascript">

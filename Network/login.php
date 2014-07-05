@@ -17,7 +17,6 @@
 		<link rel="icon" type="image/ico" href="favicon.ico">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>SimpleBox - Login</title>
-		<script src="src/sorttable.js"></script>
 		<script src="src/ValidateForm.js"></script>
 		<link type="text/css"  href="src/login.css" rel="stylesheet">
 	</head>
