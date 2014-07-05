@@ -18,7 +18,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="src/bootstrap/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="src/style_m.css">
+		<link rel="stylesheet" href="src/style.css">
 		
 		<script src="src/sorttable.js"></script>
 		<script src="src/jquery.min.js"></script>

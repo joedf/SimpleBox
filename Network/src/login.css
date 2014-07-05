@@ -1,0 +1,86 @@
+html, body {
+	font-family: sans-serif;
+}
+
+body {	
+	background: url('bg.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+table.form {
+	border: none;
+	text-align: center;
+	margin:auto;
+}
+
+#body_login {
+	left: 50%;
+	margin-left: -182px;
+	position: absolute;
+	text-align: center;
+	top: 33%;
+	width: 364px;
+}
+
+input {
+	font-family: sans-serif;
+	border-color: #0088CC;
+	border-style: solid;
+	border-width: 1px;
+	margin: 4px;
+	padding: 2px;
+}
+
+input.big {
+	padding: 4px;
+	border-style: solid;
+	border-width: 2px;
+
+	border-radius: 0;
+	border-color: #333333;
+	color: #FEFEFE;
+	background-color: #468847;
+
+	font-weight: bold;
+}
+
+input.big:hover {
+	cursor: hand; cursor: pointer;
+	background-color: #EFEFEF;
+	color: #468847;
+}
+
+input.big:active {
+	position: relative;
+	top: 1px;
+}
+
+.form_box_center {
+	border: 1px solid;
+    border-radius: 5px;
+	background-color:#FFFFFF;
+}
+
+.form_title {
+	height:48px;
+	line-height: 48px;
+	font-weight: bold;
+    text-shadow: 1px 1px #FFFFFF;
+	font-size: 16px;
+	font-weight: bold;
+	color: #555756;
+}
+
+.smoothbg {
+background: #eeeeee; /* Old browsers */
+background: -moz-linear-gradient(top,  #eeeeee 14%, #cccccc 94%, #cccccc 98%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(14%,#eeeeee), color-stop(94%,#cccccc), color-stop(98%,#cccccc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #eeeeee 14%,#cccccc 94%,#cccccc 98%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #eeeeee 14%,#cccccc 94%,#cccccc 98%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #eeeeee 14%,#cccccc 94%,#cccccc 98%); /* IE10+ */
+background: linear-gradient(to bottom,  #eeeeee 14%,#cccccc 94%,#cccccc 98%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}

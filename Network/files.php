@@ -65,7 +65,7 @@ exit();
 					<?php
 					$i = 0;
 					
-					if(!file_exists($dir) || !is_dir($dir))
+					if(!file_exists('./files') || !is_dir('./files'))
 						mkdir('./files');
 						
 					chdir('./files');

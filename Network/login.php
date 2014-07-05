@@ -19,8 +19,7 @@
 		<title>SimpleBox - Login</title>
 		<script src="src/sorttable.js"></script>
 		<script src="src/ValidateForm.js"></script>
-		<link type="text/css"  href="src/style.css" rel="stylesheet">
-		<link type="text/css"  href="src/bg.css" rel="stylesheet">
+		<link type="text/css"  href="src/login.css" rel="stylesheet">
 	</head>
 
 	<body>
