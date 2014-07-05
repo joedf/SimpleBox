@@ -64,6 +64,10 @@ exit();
 				<tbody>
 					<?php
 					$i = 0;
+					
+					if(!file_exists($dir) || !is_dir($dir))
+						mkdir('./files');
+						
 					chdir('./files');
 					
 					if (isset($_REQUEST["d"])) {
