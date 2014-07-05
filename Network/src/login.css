@@ -1,5 +1,6 @@
 html, body {
 	font-family: sans-serif;
+	font-size: 12px;
 }
 
 body {	
@@ -17,62 +18,43 @@ table.form {
 }
 
 #body_login {
-	left: 50%;
-	margin-left: -182px;
 	position: absolute;
+	top: 50%; right: 50%;
+	margin: -115px -120px;
+	width: 240px;
+	height: 230px;
 	text-align: center;
-	top: 33%;
-	width: 364px;
+	border: 1px solid #efefef;
+	border-radius: 4px;
+	background: #1a1a1a;
+	color: #efefef;
 }
 
 input {
-	font-family: sans-serif;
-	border-color: #0088CC;
-	border-style: solid;
-	border-width: 1px;
-	margin: 4px;
-	padding: 2px;
-}
-
-input.big {
-	padding: 4px;
-	border-style: solid;
-	border-width: 2px;
-
-	border-radius: 0;
-	border-color: #333333;
-	color: #FEFEFE;
-	background-color: #468847;
-
-	font-weight: bold;
-}
-
-input.big:hover {
-	cursor: hand; cursor: pointer;
-	background-color: #EFEFEF;
-	color: #468847;
-}
-
-input.big:active {
-	position: relative;
-	top: 1px;
-}
-
-.form_box_center {
-	border: 1px solid;
-    border-radius: 5px;
-	background-color:#FFFFFF;
-}
-
-.form_title {
-	height:48px;
-	line-height: 48px;
-	font-weight: bold;
-    text-shadow: 1px 1px #FFFFFF;
-	font-size: 16px;
-	font-weight: bold;
-	color: #555756;
-}
+		border-color: #0088CC;
+		border-style: solid;
+		border-width: 1px;
+		margin: 4px;
+		padding: 2px;
+		font-size:12px;
+	}
+	input.big {
+		border-style: solid;
+		border-width: 2px;
+		border-color: #333333;
+		color: #FEFEFE;
+		background-color: #468847;
+		font-weight: bold;
+	}
+	input.big:hover {
+		cursor: hand; cursor: pointer;
+		background-color: #EFEFEF;
+		color: #468847;
+	}
+	input.big:active {
+		position: relative;
+		top: 1px;
+	}
 
 .smoothbg {
 background: #eeeeee; /* Old browsers */
