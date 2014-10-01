@@ -7,6 +7,9 @@
 	header("location: login.php");
 	exit();
 	}
+	
+	if(!file_exists('./files') || !is_dir('./files'))
+		mkdir('./files');
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,7 +32,6 @@
 			function resizeIframe(obj) {
 				obj.style.height = (obj.contentWindow.document.body.scrollHeight+40) + 'px';
 			}
-			
 			function clearbtn() {
 				$('.progress').css("display","none");
 				$('.bar').width('0%');
