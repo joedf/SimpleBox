@@ -25,7 +25,7 @@
 		<div id="body_login">
 		<form action="p_login.php" method="post">
 			<h2>SimpleBox</h2>
-			<img src="http://simplebox.tk/src/logo48.png">
+			<img src="src/logo48.png">
 			<table class="form">
 				<thead><td colspan="2" style="font-size:11px">Enter your account information</td></thead>
 				<tbody>
