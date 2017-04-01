@@ -10,7 +10,7 @@ Here's how : a simple equation.
 
 `SimpleBox` **+** `Free "unlimited" Hosting` **=** `a free unlimited "Box" service`
 
-### Live Demo
+### Live Demo (down - NOT CURRENTLY AVAILABLE)
 Navigate to http://simplebox.tk  
 Username: `admin`  
 Password: `testtest321`  
@@ -21,7 +21,12 @@ Here's a few:
 - [3jelly.com](http://www.3jelly.com/)
 - [3owl.com](http://www.3owl.com/)
 - [wink.ws](http://wink.ws/)
-
+  
+### Screenshots
+![Screen01](/Screenshots/s1.png)  
+![Screen02](/Screenshots/s2.png)  
+![Screen03](/Screenshots/s3.png)  
+  
 ### Installing SimpleBox
 1. Copy/upload everything within the [`Network`](Network) directly to your free hosting service via FTP (that they provide you with).
 2. You'll have to edit [`p_login.php`](Network/p_login.php). The default username is `admin` and password `testtest321`.  
