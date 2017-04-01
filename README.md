@@ -37,3 +37,8 @@ Here's a few:
 3. Now, navigate to your webpage and login with your set credentials and voilà!
 
 Release under the [MIT License](LICENSE)
+  
+### Alternatives
+- [OwnCloud](https://owncloud.org/) [source](https://github.com/owncloud/core)
+- [ResponsiveFilemanager](https://github.com/trippo/ResponsiveFilemanager)
+- [RichFilemanager](https://github.com/servocoder/RichFilemanager)
