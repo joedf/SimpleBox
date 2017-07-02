@@ -10,7 +10,7 @@ Here's how : a simple equation.
 
 `SimpleBox` **+** `Free "unlimited" Hosting` **=** `a free unlimited "Box" service`
 
-### Live Demo (down - NOT CURRENTLY AVAILABLE)
+### Live Demo 
 Navigate to http://simplebox.byethost33.com  <strike>http://simplebox.tk</strike>  
 Username: `admin`  
 Password: `testtest321`  
