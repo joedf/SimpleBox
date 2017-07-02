@@ -11,13 +11,14 @@ Here's how : a simple equation.
 `SimpleBox` **+** `Free "unlimited" Hosting` **=** `a free unlimited "Box" service`
 
 ### Live Demo (down - NOT CURRENTLY AVAILABLE)
-Navigate to http://simplebox.tk  
+Navigate to http://simplebox.byethost33.com  <strike>http://simplebox.tk</strike>  
 Username: `admin`  
 Password: `testtest321`  
 
 ### Free "unlimited" Hosting services
 Here's a few:
 
+- [byethost.com](http://byethost.com/)
 - [3jelly.com](http://www.3jelly.com/)
 - [3owl.com](http://www.3owl.com/)
 - [wink.ws](http://wink.ws/)
