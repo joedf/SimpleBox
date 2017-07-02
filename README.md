@@ -26,6 +26,7 @@ Here's a few:
 ![Screen01](/Screenshots/s1.png)  
 ![Screen02](/Screenshots/s2.png)  
 ![Screen03](/Screenshots/s3.png)  
+![Screen03](/Screenshots/s4.png)  
   
 ### Installing SimpleBox
 1. Copy/upload everything within the [`Network`](Network) directly to your free hosting service via FTP (that they provide you with).
@@ -37,6 +38,11 @@ Here's a few:
 3. Now, navigate to your webpage and login with your set credentials and voilà!
 
 Release under the [MIT License](LICENSE)
+
+Added option to use idleberg's File viewer.
+A special thanks to this author :)
+https://github.com/idleberg/Bootstrap-Listr
+
   
 ### Alternatives
 - [OwnCloud](https://owncloud.org/) [source](https://github.com/owncloud/core)

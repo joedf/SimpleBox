@@ -63,6 +63,7 @@
 			<p><b>Version:</b> 1.0.0<br><b>Revision:</b> 01:12 2014-07-04</p>
 			<p>By <a href="http://github.com/joedf">Joe DF</a>, made with laziness...</p>
 			<p>Released under the <a href="http://opensource.org/licenses/MIT">MIT License</a></p>
+			<p>Added option to use idleberg's <a href="https://github.com/idleberg/Bootstrap-Listr">File viewer</a>. A special thanks to this author :)<br /><p>
 
 		</div>
 		<!-- END Main content -->

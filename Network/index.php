@@ -57,6 +57,14 @@
 				var filelist = document.getElementById("filelist");
 				filelist.src = "files.php";
 			}
+			function classicviewer() {
+				var filelist = document.getElementById("filelist");
+				filelist.src = "files.php";
+			}
+			function newviewer() {
+				var filelist = document.getElementById("filelist");
+				filelist.src = "bootstrap_listr/index.php";
+			}
 		</script>
 	</head>
 	
@@ -89,7 +97,7 @@
 		<div class="container theme-showcase" role="main" id="content">
 
 			<div id="toolbar">
-				<div> <!--upload-->
+				<div class="tool"> <!--upload-->
 					<input type="button" value="Upload" onclick="spoiler(this);">
 					<div style="display:none">
 						<h2 style="display:none">Upload</h2>
@@ -152,7 +160,7 @@
 						</div>
 					</div>
 				</div>
-				<div> <!--search-->
+				<div class="tool"> <!--search-->
 					<input type="button" value="Search" onclick="spoiler(this);">
 					<div style="display:none">
 						<h2 style="display:none">Search</h2>
@@ -171,11 +179,15 @@
 						</div>
 					</div>
 				</div>
+				<div class="tool"> <!--fileviewer selection-->
+					<b>File viewer:</b> <input type="button" value="Classic" onclick="classicviewer();"> 
+					<input type="button" value="Bootstrap-Listr v2.2.6" onclick="newviewer();">
+				</div>
 			</div>
 			
 			<div id="filediv">
 				<img src="src/loading.gif" id="loader">
-				<iframe src="files.php" id="filelist" onload="javascript:resizeIframe(this);document.getElementById('loader').style.display='none';" style="max-width:100%;"></iframe>
+				<iframe src="bootstrap_listr/index.php" id="filelist" onload="javascript:resizeIframe(this);document.getElementById('loader').style.display='none';" style="max-width:100%;"></iframe>
 			</div>
 
 		</div>

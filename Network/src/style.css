@@ -17,17 +17,18 @@ iframe {
 tr:hover { background-color:#EFEFEF; }
 
 #toolbar input {
-		vertical-align:top;
-		background-color: #101010;
-		border: 2px solid #666;
-		border-radius: 4px;
-		color: white;
-		height:24px;
-	}
+	vertical-align:top;
+	background-color: #101010;
+	border: 2px solid #666;
+	border-radius: 4px;
+	color: white;
+	height:24px;
+}
 
-	#toolbar input:not(#file) {
-		width:80px;
-	}
+#toolbar input:not(#file) {
+	min-width:80px;
+	font-size:10px;
+}
 
 .theme-dropdown .dropdown-menu {
 	position: static;
@@ -54,30 +55,42 @@ tr:hover { background-color:#EFEFEF; }
 	text-align:center;
 	padding:auto;
 	margin:auto;
+	margin-top: 12px;
 }
 
 .progress {
-		display:inline-block;
-		position:relative;
-		width:400px;
-		border: 1px solid #ddd;
-		padding: 1px;
-		border-radius: 3px;
-		height:22px;
-		margin-bottom:-6px;
-	}
-	.progress .bar {
-		background-color: #B4F5B4;
-		width:0%;
-		border-radius: 3px;
-		height:100%;
-		-webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
-		transition: width 0.5s;
-	}
-	.progress .percent {
-		position:absolute;
-		display:inline-block;
-		top:0;
-		text-align: center;
-		width: 100%;
-	}
+	display:inline-block;
+	position:relative;
+	width:400px;
+	border: 1px solid #ddd;
+	padding: 1px;
+	border-radius: 3px;
+	height:22px;
+	margin-bottom:-6px;
+}
+.progress .bar {
+	background-color: #B4F5B4;
+	width:0%;
+	border-radius: 3px;
+	height:100%;
+	-webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
+	transition: width 0.5s;
+}
+.progress .percent {
+	position:absolute;
+	display:inline-block;
+	top:0;
+	text-align: center;
+	width: 100%;
+}
+.tool {
+	display: inline-block !important;
+	background: #666;
+	padding: 4px;
+}
+.tool b{
+	color: white;
+	font-size: 11px;
+	line-height:22px;
+	vertical-align:bottom;
+}
