@@ -60,7 +60,7 @@
 
 			<a href="http://github.com/joedf/SimpleBox" style="color:black;text-decoration:none"><h1>SimpleBox</h1>
 			<img src="src/logo.png"></a><br><br>
-			<p><b>Version:</b> 1.0.0<br><b>Revision:</b> 01:12 2014-07-04</p>
+			<p><b>Version:</b> 1.1.0<br><b>Revision:</b> 13:49 2017-07-02</p>
 			<p>By <a href="http://github.com/joedf">Joe DF</a>, made with laziness...</p>
 			<p>Released under the <a href="http://opensource.org/licenses/MIT">MIT License</a></p>
 			<p>Added option to use idleberg's <a href="https://github.com/idleberg/Bootstrap-Listr">File viewer</a>. A special thanks to this author :)<br /><p>
